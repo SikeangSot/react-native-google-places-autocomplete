@@ -158,7 +158,8 @@ export const GooglePlacesAutocomplete = forwardRef((props, ref) => {
 
   useImperativeHandle(ref, () => ({
     setAddressText: (address) => {
-      setStateText(address);
+//       setStateText(address);
+      _handleChangeText(stateText);
     },
     getAddressText: () => stateText,
     blur: () => inputRef.current.blur(),
